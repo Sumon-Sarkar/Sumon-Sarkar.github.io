@@ -1,0 +1,59 @@
+:root {
+  --ink:#202428;
+  --muted:#60676e;
+  --line:#e1e3e5;
+  --accent:#173e61;
+  --page:#fff;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--page); color:var(--ink); font:16px/1.7 Inter,Arial,sans-serif; }
+main, header, footer { max-width:790px; margin:auto; padding-left:26px; padding-right:26px; }
+header { padding-top:34px; padding-bottom:28px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; justify-content:space-between; gap:20px; }
+.name { color:var(--ink); font:34px/1 "Instrument Serif",Georgia,serif; text-decoration:none; white-space:nowrap; }
+nav { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:8px 16px; font-size:13px; }
+nav a, .links a { color:var(--accent); text-decoration:none; border-bottom:1px solid transparent; }
+nav a:hover, nav a.active, .links a:hover { border-color:var(--accent); }
+section { padding:50px 0; }
+h1, h2 { margin:0 0 20px; font-family:"Instrument Serif",Georgia,serif; font-weight:400; letter-spacing:-.015em; }
+h1 { font-size:54px; line-height:1; }
+h2 { font-size:33px; line-height:1.1; }
+p { margin:0 0 18px; }
+.lede { max-width:680px; color:var(--muted); font-size:19px; }
+.label { color:var(--accent); font-size:11px; font-weight:600; letter-spacing:.11em; text-transform:uppercase; margin-bottom:15px; }
+.links { display:flex; flex-wrap:wrap; gap:15px; margin-top:26px; font-size:14px; }
+.portrait { float:right; width:190px; height:235px; margin:0 0 20px 30px; object-fit:cover; object-position:center; border:1px solid var(--line); }
+.subhead { margin:40px 0 14px; font:28px/1.1 "Instrument Serif",Georgia,serif; }
+.experience-entry { position:relative; padding:19px 150px 19px 0; border-top:1px solid var(--line); }
+.experience-entry .date { position:absolute; top:19px; right:0; color:var(--muted); font-size:13px; white-space:nowrap; }
+.experience-entry p { margin:10px 0 0; color:var(--muted); font-size:14px; }
+.experience-entry em { color:var(--muted); font-size:14px; }
+.research-item { margin-top:38px; padding-top:28px; border-top:1px solid var(--line); }
+.research-number { color:var(--accent); font-size:12px; font-weight:600; letter-spacing:.12em; margin-bottom:8px; }
+.research-item h3 { margin:0 0 15px; font:30px/1.1 "Instrument Serif",Georgia,serif; }
+.pub-list { border-top:1px solid var(--line); margin-top:28px; }
+.pub-entry { border-bottom:1px solid var(--line); }
+.pub-static { padding:20px 0; display:grid; grid-template-columns:42px 1fr; gap:14px; text-align:left; }
+.pub-number { color:var(--accent); font:28px/1 "Instrument Serif",Georgia,serif; }
+.pub-meta, .pub-authors { display:block; color:var(--muted); font-size:13px; }
+.pub-meta { margin-bottom:4px; }
+.pub-title { display:block; font:26px/1.1 "Instrument Serif",Georgia,serif; margin-bottom:7px; }
+.note { color:var(--muted); font-size:14px; }
+.awards-list { border-top:1px solid var(--line); }
+.award { position:relative; padding:17px 90px 17px 0; border-bottom:1px solid var(--line); }
+.award span { color:var(--muted); font-size:14px; }
+.award .date { position:absolute; top:17px; right:0; color:var(--muted); font-size:13px; }
+footer { border-top:1px solid var(--line); padding-top:24px; padding-bottom:36px; color:var(--muted); font-size:13px; }
+@media (max-width:700px) {
+  header { align-items:flex-start; flex-direction:column; }
+  nav { justify-content:flex-start; }
+}
+@media (max-width:600px) {
+  .portrait { float:none; display:block; width:150px; height:185px; margin:0 0 22px; }
+  h1 { font-size:44px; }
+  section { padding:38px 0; }
+  .experience-entry { padding-right:0; }
+  .experience-entry .date { position:static; margin-top:5px; }
+  .pub-static { grid-template-columns:30px 1fr; }
+  .pub-title { font-size:23px; }
+}
