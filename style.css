@@ -29,7 +29,7 @@ p { margin:0 0 18px; }
 .experience-entry p { margin:10px 0 0; color:var(--muted); font-size:14px; }
 .experience-entry em { color:var(--muted); font-size:14px; }
 .research-item { margin-top:38px; padding-top:28px; border-top:1px solid var(--line); }
-.research-number { color:var(--accent); font-size:12px; font-weight:600; letter-spacing:.12em; margin-bottom:8px; }
+.research-number { color:var(--accent); font:600 14px/1.1 "Helvetica Neue",Helvetica,Arial,sans-serif; letter-spacing:.04em; margin-right:8px; }
 .research-item h3 { margin:0 0 15px; font:30px/1.1 "Instrument Serif",Georgia,serif; }
 .pub-list { border-top:1px solid var(--line); margin-top:28px; }
 .pub-entry { border-bottom:1px solid var(--line); }
