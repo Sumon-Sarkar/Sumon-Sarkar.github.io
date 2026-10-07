@@ -39,8 +39,19 @@ Broadly, I’m interested in integrating machine learning with synthetic organic
     .lede { max-width:680px; color:var(--muted); font-size:19px; }
     .label { color:var(--accent); font-size:11px; font-weight:600; letter-spacing:.11em; text-transform:uppercase; margin-bottom:15px; }
     .links { display:flex; flex-wrap:wrap; gap:15px; margin-top:26px; font-size:14px; }
-    .papers { margin:0; padding-left:22px; }
-    .papers li { padding:11px 0; }
+    .pub-list { border-top:1px solid var(--line); margin-top:28px; }
+    .pub-entry { border-bottom:1px solid var(--line); }
+    .pub-toggle { width:100%; padding:20px 0; border:0; background:transparent; color:var(--ink); display:grid; grid-template-columns:42px 1fr auto; gap:14px; text-align:left; cursor:pointer; font:inherit; }
+    .pub-number { color:var(--accent); font:28px/1 "Instrument Serif",Georgia,serif; }
+    .pub-meta, .pub-authors { display:block; color:var(--muted); font-size:13px; }
+    .pub-meta { margin-bottom:4px; }
+    .pub-title { display:block; font:26px/1.1 "Instrument Serif",Georgia,serif; margin-bottom:7px; }
+    .pub-expand { color:var(--accent); font-size:12px; white-space:nowrap; padding-top:3px; }
+    .pub-detail { display:none; margin:0 0 22px 56px; padding:15px 18px; background:#f5f8fa; color:var(--muted); font-size:14px; }
+    .pub-entry.open .pub-detail { display:block; }
+    .pub-entry.open .pub-expand { font-size:0; }
+    .pub-entry.open .pub-expand:after { content:"Collapse ↑"; font-size:12px; }
+    @media (max-width:600px) { .pub-toggle { grid-template-columns:30px 1fr; } .pub-expand { grid-column:2; } .pub-detail { margin-left:30px; } .pub-title { font-size:23px; } }
     .note { color:var(--muted); font-size:14px; }
     .research-item { margin-top:38px; padding-top:28px; border-top:1px solid var(--line); }
     .research-number { color:var(--accent); font-size:12px; font-weight:600; letter-spacing:.12em; margin-bottom:8px; }
@@ -107,17 +118,49 @@ Broadly, I’m interested in integrating machine learning with synthetic organic
     </section>
 
     <section id="papers">
-      <div class="label">Papers</div>
-      <h2>Selected work</h2>
-      <ol class="papers">
-        <li>AI-guided synthesis planning and practical retrosynthesis.</li>
-        <li>Photochemical palladium catalysis and excited-state Pd–H reactivity.</li>
-        <li>Radical C–H functionalization and borylation of aliphatic amines.</li>
-        <li>Radical relay and aryl-triflate activation chemistry.</li>
-      </ol>
-      <p class="note">A fully verified publication list with DOI and PDF links is being prepared. For now, please see my <a href="https://scholar.google.com/citations?user=ohjwfakAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar profile</a>.</p>
-    </section>
+      <div class="label">Publications</div>
+      <h2>Selected publications</h2>
+      <p>Representative publications are listed below with brief descriptions of the synthetic problem addressed and the key methodological or mechanistic contributions of each study. Click any entry to expand. <strong>#</strong> = equal contribution.</p>
 
+      <div class="pub-list">
+        <article class="pub-entry">
+          <button class="pub-toggle"><span class="pub-number">10</span><span><span class="pub-meta"><em>Nature</em> 2026, 651, 107 · Co-first author · AI · Synthesis</span><span class="pub-title">Collective Intelligence for AI-Assisted Chemical Synthesis (MOSAIC)</span><span class="pub-authors">Li, H.;# <strong>Sarkar, S.</strong>;# Lu, W.; Loftus, P. O.; Qiu, T.; Shee, Y.; Cuomo, A. E.; Webster, J.-P.; Kelly, H. R.; Manee, V.; Sreekumar, S.; Buono, F. G.; Crabtree, R. H.; Newhouse, T. R.; Batista, V. S.</span></span><span class="pub-expand">Expand ↓</span></button>
+          <div class="pub-detail"><strong>The problem.</strong> Synthesis planning must combine route selection with operational decisions that are usually scattered across the literature. <strong>Contribution.</strong> MOSAIC coordinates 2,498 specialized models to generate complete experimental protocols with confidence metrics; experimental validation across 35+ new targets delivered a 71% overall success rate.</div>
+        </article>
+        <article class="pub-entry">
+          <button class="pub-toggle"><span class="pub-number">9</span><span><span class="pub-meta"><em>J. Am. Chem. Soc.</em> 2025, 147, 40064 · Co-first author · C–H Borylation</span><span class="pub-title">Transition Metal-Free Site-Selective β- and γ-C(sp<sup>3</sup>)–H Borylation of Amines</span><span class="pub-authors"><strong>Sarkar, S.</strong>;# Deo, N. K.;# Zhang, T.; Gevorgyan, V.</span></span><span class="pub-expand">Expand ↓</span></button>
+          <div class="pub-detail"><strong>The problem.</strong> Remote amine C(sp<sup>3</sup>)–H borylation is challenged by multiple similar bonds and coordination to metal catalysts. <strong>Contribution.</strong> A nitrogen-radical/1,5-HAT strategy enables site-selective β- and γ-borylation without transition metals, furnishing versatile boron-containing amine building blocks.</div>
+        </article>
+        <article class="pub-entry">
+          <button class="pub-toggle"><span class="pub-number">8</span><span><span class="pub-meta"><em>J. Am. Chem. Soc.</em> 2023, 145, 12224 · Most Read · Photocatalysis</span><span class="pub-title">Enhanced Excited State Hydricity of Pd–H Allows for Unusual Head-to-Tail Hydroalkenylation of Alkenes</span><span class="pub-authors"><strong>Sarkar, S.</strong>; Ghosh, S.; Kurandina, D.; Noffel, Y.; Gevorgyan, V.</span></span><span class="pub-expand">Expand ↓</span></button>
+          <div class="pub-detail"><strong>The problem.</strong> Ground-state palladium hydrides do not access many radical-polarity pathways needed for selective alkene coupling. <strong>Contribution.</strong> This study established that photoexcitation enhances Pd–H hydricity, enabling unusual head-to-tail hydroalkenylation and clarifying how excited-state thermodynamics can open new catalytic manifolds.</div>
+        </article>
+        <article class="pub-entry">
+          <button class="pub-toggle"><span class="pub-number">7</span><span><span class="pub-meta"><em>Chem</em> 2022, 8, 3096 · &gt;75 citations · Metal-Free</span><span class="pub-title">General and Selective Metal-Free Radical α-C–H Borylation of Aliphatic Amines</span><span class="pub-authors"><strong>Sarkar, S.</strong>; Wagulde, S.; Jia, X.; Gevorgyan, V.</span></span><span class="pub-expand">Expand ↓</span></button>
+          <div class="pub-detail"><strong>The problem.</strong> Direct α-functionalization of aliphatic amines often relies on prefunctionalized substrates or restrictive oxidative conditions. <strong>Contribution.</strong> A general radical strategy converts α-amino C–H bonds into C–B bonds under metal-free conditions, providing modular access to synthetically useful amine derivatives.</div>
+        </article>
+        <article class="pub-entry">
+          <button class="pub-toggle"><span class="pub-number">6</span><span><span class="pub-meta"><em>Angew. Chem. Int. Ed.</em> 2024, 63, e202311972 · Top Viewed Paper · &gt;130 citations</span><span class="pub-title">Recent Advances in Visible Light-Induced Palladium Catalysis</span><span class="pub-authors"><strong>Sarkar, S.</strong>; Cheung, K. P. S.; Gevorgyan, V.</span></span><span class="pub-expand">Expand ↓</span></button>
+          <div class="pub-detail"><strong>The problem.</strong> Visible-light palladium catalysis encompasses diverse reactivity modes whose mechanistic logic can be difficult to navigate. <strong>Contribution.</strong> This review organizes recent advances around photoexcited Pd intermediates, radical pathways, and the synthetic opportunities created by light-driven changes in palladium reactivity.</div>
+        </article>
+        <article class="pub-entry">
+          <button class="pub-toggle"><span class="pub-number">5</span><span><span class="pub-meta"><em>Chem. Sci.</em> 2020, 11, 12974 · Co-first author · &gt;400 citations</span><span class="pub-title">C–H Functionalization Reactions Enabled by Hydrogen Atom Transfer to Carbon-Centered Radicals</span><span class="pub-authors"><strong>Sarkar, S.</strong>;# Cheung, K. P. S.;# Gevorgyan, V.</span></span><span class="pub-expand">Expand ↓</span></button>
+          <div class="pub-detail"><strong>The problem.</strong> HAT can impart exceptional selectivity in C–H functionalization, but its relationship to downstream radical capture is often obscured. <strong>Contribution.</strong> A mechanistically focused review connects HAT design principles to synthetic applications, helping establish a framework for site-selective radical C–H functionalization.</div>
+        </article>
+        <article class="pub-entry">
+          <button class="pub-toggle"><span class="pub-number">4</span><span><span class="pub-meta"><em>Chem. Rev.</em> 2022, 122, 1543 · &gt;800 citations</span><span class="pub-title">Visible Light-Induced Transition Metal Catalysis</span><span class="pub-authors">Cheung, K. P. S.; <strong>Sarkar, S.</strong>; Gevorgyan, V.</span></span><span class="pub-expand">Expand ↓</span></button>
+          <div class="pub-detail"><strong>The problem.</strong> Photoexcitation can fundamentally alter the redox and bond-forming properties of transition-metal intermediates. <strong>Contribution.</strong> This comprehensive review maps the mechanistic foundations and synthetic applications of visible-light-induced transition-metal catalysis across the field.</div>
+        </article>
+        <article class="pub-entry">
+          <button class="pub-toggle"><span class="pub-number">2</span><span><span class="pub-meta"><em>Angew. Chem. Int. Ed.</em> 2020, 59, 10316 · Co-first author · &gt;120 citations</span><span class="pub-title">Visible Light-Induced Palladium-Catalyzed Generation of Aryl Radicals from Aryl Triflates</span><span class="pub-authors">Ratushnyy, M.; Kvasovs, N.;# <strong>Sarkar, S.</strong>;# Gevorgyan, V.</span></span><span class="pub-expand">Expand ↓</span></button>
+          <div class="pub-detail"><strong>The problem.</strong> Aryl triflates typically engage in two-electron oxidative-addition chemistry rather than single-electron radical generation. <strong>Contribution.</strong> Visible-light palladium catalysis enables aryl-radical formation from aryl triflates, expanding these common electrophiles to intramolecular C(sp<sup>3</sup>)–H arylation.</div>
+        </article>
+        <article class="pub-entry">
+          <button class="pub-toggle"><span class="pub-number">1</span><span><span class="pub-meta"><em>Angew. Chem. Int. Ed.</em> 2019, 58, 1794 · C–H Functionalization</span><span class="pub-title">Aliphatic Radical Relay Heck Reaction at Unactivated C(sp<sup>3</sup>)–H Sites of Alcohols</span><span class="pub-authors">Chuentragool, P.;# Yadagiri, D.;# Morita, T.;# <strong>Sarkar, S.</strong>; Parasram, M.; Wang, Y.; Gevorgyan, V.</span></span><span class="pub-expand">Expand ↓</span></button>
+          <div class="pub-detail"><strong>The problem.</strong> Functionalizing remote, unactivated C(sp<sup>3</sup>)–H bonds of alcohols with alkene partners is a challenging selectivity problem. <strong>Contribution.</strong> A radical-relay Heck strategy links directed H-atom transfer, remote radical generation, and alkene coupling to form C–C bonds at otherwise inaccessible positions.</div>
+        </article>
+      </div>
+    </section>
     <section id="contact">
       <div class="label">Contact</div>
       <h2>Get in touch</h2>
@@ -130,6 +173,9 @@ Broadly, I’m interested in integrating machine learning with synthetic organic
     <span class="preview">Preview site</span><br>
     © <span id="year"></span> Sumon Sarkar
   </footer>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.querySelectorAll(".pub-toggle").forEach(button => button.addEventListener("click", () => button.closest(".pub-entry").classList.toggle("open")));
+  </script>
 </body>
 </html>
