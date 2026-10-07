@@ -42,6 +42,9 @@ Broadly, I’m interested in integrating machine learning with synthetic organic
     .papers { margin:0; padding-left:22px; }
     .papers li { padding:11px 0; }
     .note { color:var(--muted); font-size:14px; }
+    .research-item { margin-top:38px; padding-top:28px; border-top:1px solid var(--line); }
+    .research-number { color:var(--accent); font-size:12px; font-weight:600; letter-spacing:.12em; margin-bottom:8px; }
+    .research-item h3 { margin:0 0 15px; font:30px/1.1 "Instrument Serif",Georgia,serif; }
     footer { padding-top:24px; padding-bottom:36px; color:var(--muted); font-size:13px; }
     .preview { color:var(--accent); font-size:11px; letter-spacing:.1em; text-transform:uppercase; }
     .portrait { float:right; width:190px; height:235px; margin:0 0 20px 30px; object-fit:cover; object-position:center; border:1px solid var(--line); }
@@ -77,11 +80,30 @@ Broadly, I’m interested in integrating machine learning with synthetic organic
     </section>
 
     <section id="research">
-      <div class="label">Research</div>
-      <h2>New reactivity, then better rules for using it.</h2>
-      <p>I study synthetic problems for which current reactions are insufficient: functionalizing unactivated C–H bonds, controlling reactive radical intermediates, and predicting which catalysts will deliver useful selectivity.</p>
-      <p>My earlier work explored excited-state Pd–H hydricity, radical C–H borylation, radical-relay Heck reactions, and aryl-radical generation from triflates. My current research asks how atomistic machine learning and mechanistic modeling can help design more sustainable catalytic transformations.</p>
-      <p>I also helped develop AI-guided synthesis-planning approaches that turn broad chemical knowledge into experimentally actionable routes. The goal is not to automate chemistry for its own sake, but to give chemists better starting points for making molecules that matter.</p>
+      <div class="label">Research program</div>
+      <h2>Research interests</h2>
+      <p>My research program spans three interconnected areas: the development of photocatalytic and radical methods for site-selective C–H functionalization; the application of machine learning to retrosynthetic planning and reaction prediction; and data-driven approaches to asymmetric catalyst optimization. These efforts are united by a commitment to experimental validation — computational predictions are tested at the bench, and bench observations motivate the next generation of models.</p>
+
+      <div class="research-item">
+        <div class="research-number">01</div>
+        <h3>Photocatalytic C–H Functionalization &amp; Radical Methodology</h3>
+        <p>Achieving site-selective functionalization of unactivated C(sp<sup>3</sup>)–H bonds remains a central challenge in synthesis. Visible-light excitation of transition-metal intermediates provides access to open-shell pathways unavailable under thermal conditions. We demonstrated that photoexcitation of Pd–H species <em>enhances hydride donor ability in the excited state</em>, enabling anti-Markovnikov radical Heck-type reactivity and chemoselective head-to-tail alkene cross-dimerization.</p>
+        <p>Complementary metal-free strategies employing nitrogen-centered radicals and 1,5-HAT deliver <em>site-selective β- and γ-C(sp<sup>3</sup>)–H borylation of aliphatic amines</em> without transition metals. We further established that aryl triflates, conventionally limited to two-electron Pd(0)/Pd(II) oxidative addition, undergo single-electron reduction under visible light to generate aryl radicals competent for intramolecular C(sp<sup>3</sup>)–H arylation.</p>
+      </div>
+
+      <div class="research-item">
+        <div class="research-number">02</div>
+        <h3>Machine Learning for Retrosynthetic Planning</h3>
+        <p>The procedural knowledge required for reliable synthesis planning — choice of reagents, solvent, temperature, stoichiometry, and workup — is distributed across millions of published reports and remains largely inaccessible to computational methods. We developed <em>MOSAIC</em>, a mixture-of-experts large language-model framework in which 2,498 specialist models, each trained within a Voronoi-partitioned region of chemical reaction space, collectively generate complete and reproducible experimental protocols with associated confidence metrics.</p>
+        <p>Experimental validation across 35+ previously unreported compounds, spanning pharmaceuticals, agrochemicals, and functional materials, demonstrated a <em>71% overall success rate</em>. Notably, MOSAIC proposed productive reaction conditions for transformations outside its direct training distribution, indicating capacity for meaningful extrapolation rather than mere interpolation.</p>
+      </div>
+
+      <div class="research-item">
+        <div class="research-number">03</div>
+        <h3>Data-Driven Catalyst Design &amp; Sustainable Synthesis</h3>
+        <p>Catalyst and ligand optimization in asymmetric synthesis proceeds predominantly by empirical screening, which is resource-intensive and provides limited mechanistic insight into the origins of selectivity. At BIDMaP (Berkeley), in collaboration with Prof. F. Dean Toste and Dr. Samuel Blau (LBNL), I develop <em>quantitative structure–enantioselectivity relationships</em> and data-driven models that connect catalyst and substrate descriptors to experimental outcomes — yield, enantioselectivity, and turnover.</p>
+        <p>The objective is both predictive (identifying productive catalyst–substrate combinations prospectively) and interpretive (rationalizing selectivity-determining interactions in terms of accessible transition-state geometries and steric/electronic features).</p>
+      </div>
     </section>
 
     <section id="papers">
