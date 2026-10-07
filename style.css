@@ -60,3 +60,13 @@ footer { border-top:1px solid var(--line); padding-top:24px; padding-bottom:36px
 .institution-dates { display:grid; grid-template-columns:1fr auto; gap:4px 24px; margin-bottom:10px; }
 .institution-dates span { color:var(--muted); font-size:13px; white-space:nowrap; }
 @media (max-width:600px) { .institution-dates { grid-template-columns:1fr; gap:2px; } .institution-dates span { margin-bottom:8px; } }
+
+.email-link { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent); }
+.contact-form-section { padding-top:0; }
+.contact-form { max-width:590px; display:grid; gap:8px; }
+.contact-form label { margin-top:12px; color:var(--ink); font-size:14px; font-weight:600; }
+.contact-form input, .contact-form textarea { width:100%; padding:10px 12px; border:1px solid var(--line); border-radius:0; background:var(--page); color:var(--ink); font:16px/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif; }
+.contact-form textarea { resize:vertical; }
+.contact-form input:focus, .contact-form textarea:focus { outline:2px solid var(--accent); outline-offset:1px; }
+.contact-form button { justify-self:start; margin-top:14px; padding:10px 15px; border:1px solid var(--accent); border-radius:0; background:var(--accent); color:#fff; cursor:pointer; font:600 14px/1.2 "Helvetica Neue",Helvetica,Arial,sans-serif; }
+.contact-form button:hover { background:#102f4a; }
