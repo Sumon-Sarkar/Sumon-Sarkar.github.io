@@ -33,8 +33,8 @@ p { margin:0 0 18px; }
 .research-item h3 { margin:0 0 15px; font:30px/1.1 "Instrument Serif",Georgia,serif; }
 .pub-list { display:grid; gap:20px; margin-top:28px; }
 .pub-entry { border-left:3px solid var(--line); padding-left:18px; }
-.pub-static { display:grid; grid-template-columns:32px minmax(0, 1fr) 210px; gap:12px; align-items:start; text-align:left; }
-.pub-static::after { content:""; width:210px; height:150px; background:center / contain no-repeat; }
+.pub-static { display:grid; grid-template-columns:32px minmax(0, 1fr); gap:12px; align-items:start; text-align:left; }
+.pub-static::after { content:""; grid-column:2; width:min(100%, 420px); height:210px; margin-top:4px; background:center / contain no-repeat; }
 .pub-entry:nth-child(1) .pub-static::after { background-image:url("assets/toc-web/mosaic.jpg"); }
 .pub-entry:nth-child(2) .pub-static::after { background-image:url("assets/toc-web/beta-gamma-borylation-amines.jpg"); }
 .pub-entry:nth-child(3) .pub-static::after { background-image:url("assets/toc-web/pd-h-hydricity.jpg"); }
@@ -42,7 +42,7 @@ p { margin:0 0 18px; }
 .pub-entry:nth-child(5) .pub-static::after { background-image:url("assets/toc-web/pd-photocatalysis-review.jpg"); }
 .pub-entry:nth-child(6) .pub-static::after { background-image:url("assets/toc-web/hat-review.jpg"); }
 .pub-entry:nth-child(7) .pub-static::after { background-image:url("assets/toc-web/visible-light-metal-catalysis-review.jpg"); }
-.pub-entry:nth-child(8) .pub-static::after { background-image:url("assets/toc-web/evolved-complexity.jpg"); }
+.pub-entry:nth-child(8) .pub-static::after { background-image:url("assets/toc-web/evolved-complexity-clean.png"); }
 .pub-entry:nth-child(9) .pub-static::after { background-image:url("assets/toc-web/aryl-radicals-triflates.jpg"); }
 .pub-entry:nth-child(10) .pub-static::after { background-image:url("assets/toc-web/radical-relay-heck.jpg"); }
 .pub-number { color:var(--accent); font:600 14px/1.3 "Helvetica Neue",Helvetica,Arial,sans-serif; padding-top:4px; }
@@ -57,7 +57,7 @@ p { margin:0 0 18px; }
 .pub-highlights { color:var(--muted); font-size:13px; margin:12px 0 0; padding-left:18px; }
 .pub-highlights li + li { margin-top:2px; }
 .social-link { display:inline-flex; align-items:center; gap:6px; }
-.social-link img { width:18px; height:18px; object-fit:contain; }
+.social-link img { width:18px; height:18px; object-fit:contain; background:#fff; }
 .note { color:var(--muted); font-size:14px; }
 .awards-list { border-top:1px solid var(--line); }
 .award { position:relative; padding:17px 90px 17px 0; border-bottom:1px solid var(--line); }
