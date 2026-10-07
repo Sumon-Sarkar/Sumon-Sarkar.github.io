@@ -42,9 +42,13 @@ p { margin:0 0 18px; }
 .pub-entry:nth-child(5) .pub-static::after { background-image:url("assets/toc-web/pd-photocatalysis-review.jpg"); }
 .pub-entry:nth-child(6) .pub-static::after { background-image:url("assets/toc-web/hat-review.jpg"); }
 .pub-entry:nth-child(7) .pub-static::after { background-image:url("assets/toc-web/visible-light-metal-catalysis-review.jpg"); }
-.pub-entry:nth-child(8) .pub-static::after { background-image:url("assets/toc-web/evolved-complexity-clean.png"); }
+.pub-entry:nth-child(8) .pub-static::after { background-image:url("assets/toc-web/evolved-complexity-revised.png"); }
 .pub-entry:nth-child(9) .pub-static::after { background-image:url("assets/toc-web/aryl-radicals-triflates.jpg"); }
 .pub-entry:nth-child(10) .pub-static::after { background-image:url("assets/toc-web/radical-relay-heck.jpg"); }
+.pub-entry:nth-child(3) .pub-static::after,
+.pub-entry:nth-child(10) .pub-static::after { width:min(100%, 525px); height:263px; }
+.pub-entry:nth-child(4) .pub-static::after,
+.pub-entry:nth-child(5) .pub-static::after { width:min(100%, 630px); height:315px; }
 .pub-number { color:var(--accent); font:600 14px/1.3 "Helvetica Neue",Helvetica,Arial,sans-serif; padding-top:4px; }
 .pub-authors { display:block; color:var(--muted); font-size:14px; line-height:1.55; margin-top:7px; }
 .pub-title { display:block; font:600 21px/1.25 "Helvetica Neue",Helvetica,Arial,sans-serif; letter-spacing:-.01em; }
