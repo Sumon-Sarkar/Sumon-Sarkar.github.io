@@ -7,7 +7,7 @@
 }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
-body { margin:0; background:var(--page); color:var(--ink); font:16px/1.7 Inter,Arial,sans-serif; }
+body { margin:0; background:var(--page); color:var(--ink); font:16px/1.7 "Helvetica Neue",Helvetica,Arial,sans-serif; }
 main, header, footer { max-width:790px; margin:auto; padding-left:26px; padding-right:26px; }
 header { padding-top:34px; padding-bottom:28px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; justify-content:space-between; gap:20px; }
 .name { color:var(--ink); font:34px/1 "Instrument Serif",Georgia,serif; text-decoration:none; white-space:nowrap; }
@@ -34,10 +34,10 @@ p { margin:0 0 18px; }
 .pub-list { border-top:1px solid var(--line); margin-top:28px; }
 .pub-entry { border-bottom:1px solid var(--line); }
 .pub-static { padding:20px 0; display:grid; grid-template-columns:42px 1fr; gap:14px; text-align:left; }
-.pub-number { color:var(--accent); font:28px/1 "Instrument Serif",Georgia,serif; }
+.pub-number { color:var(--accent); font:600 14px/1.3 "Helvetica Neue",Helvetica,Arial,sans-serif; padding-top:4px; }
 .pub-meta, .pub-authors { display:block; color:var(--muted); font-size:13px; }
 .pub-meta { margin-bottom:4px; }
-.pub-title { display:block; font:26px/1.1 "Instrument Serif",Georgia,serif; margin-bottom:7px; }
+.pub-title { display:block; font:500 21px/1.25 "Helvetica Neue",Helvetica,Arial,sans-serif; letter-spacing:-.01em; margin-bottom:7px; }
 .note { color:var(--muted); font-size:14px; }
 .awards-list { border-top:1px solid var(--line); }
 .award { position:relative; padding:17px 90px 17px 0; border-bottom:1px solid var(--line); }
@@ -55,5 +55,5 @@ footer { border-top:1px solid var(--line); padding-top:24px; padding-bottom:36px
   .experience-entry { padding-right:0; }
   .experience-entry .date { position:static; margin-top:5px; }
   .pub-static { grid-template-columns:30px 1fr; }
-  .pub-title { font-size:23px; }
+  .pub-title { font-size:20px; }
 }
