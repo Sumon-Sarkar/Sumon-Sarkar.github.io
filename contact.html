@@ -22,11 +22,31 @@
     </nav>
   </header>
   <main>
-<section>
-      <div class="label">Contact</div>
-      <h2>Get in touch</h2>
-      <p>sumon.sarkar@berkeley.edu<br>BIDMaP, University of California, Berkeley<br>Berkeley, CA 94720</p>
-      <p class="note">Royal Society of Chemistry · American Chemical Society · Indian Chemical Society</p>
+    <section>
+      <h1>Contact</h1>
+      <p><a class="email-link" href="mailto:sumon.sarkar@berkeley.edu">sumon.sarkar@berkeley.edu</a><br>
+      Bakar Institute of Digital Materials for the Planet (BIDMaP)<br>
+      &amp; Department of Chemistry<br>
+      University of California, Berkeley<br>
+      Berkeley, CA 94720</p>
+    </section>
+
+    <section class="contact-form-section">
+      <form id="contact-form" class="contact-form">
+        <label for="contact-name">Your Name</label>
+        <input id="contact-name" name="name" type="text" autocomplete="name" required>
+
+        <label for="contact-email">Your Email</label>
+        <input id="contact-email" name="email" type="email" autocomplete="email" required>
+
+        <label for="contact-subject">Subject</label>
+        <input id="contact-subject" name="subject" type="text" required>
+
+        <label for="contact-message">Message</label>
+        <textarea id="contact-message" name="message" rows="7" required></textarea>
+
+        <button type="submit">Send email</button>
+      </form>
     </section>
   </main>
   <footer>© <span id="year"></span> Sumon Sarkar</footer>
