@@ -100,9 +100,9 @@ footer { border-top:1px solid var(--line); padding-top:24px; padding-bottom:36px
 body.publications-page main { max-width:1000px; }
 .publication-intro { margin-bottom:24px; }
 .publications-heading { margin-bottom:34px; }
-.filter-label { margin:0 0 16px; color:#555; font-size:19px; }
-.theme-filters { display:flex; flex-wrap:wrap; gap:10px 14px; }
-.theme-filter { appearance:none; border:2px solid var(--accent); border-radius:999px; background:#fff; color:var(--accent); cursor:pointer; font:16px/1.2 "Helvetica Neue",Helvetica,Arial,sans-serif; padding:11px 20px; transition:background-color .15s,color .15s; }
+.filter-label { margin:0 0 14px; color:#555; font-size:17px; }
+.theme-filters { display:flex; flex-wrap:wrap; gap:8px 11px; }
+.theme-filter { appearance:none; border:2px solid var(--accent); border-radius:999px; background:#fff; color:var(--accent); cursor:pointer; font:14px/1.2 "Helvetica Neue",Helvetica,Arial,sans-serif; padding:9px 16px; transition:background-color .15s,color .15s; }
 .theme-filter:hover,.theme-filter:focus-visible { background:#edf4fa; outline:2px solid transparent; }
 .theme-filter.is-active { background:var(--accent); color:#fff; }
 .theme-filter:focus-visible,.pub-tag:focus-visible { outline:3px solid #85b5e8; outline-offset:2px; }
@@ -113,8 +113,8 @@ body.publications-page main { max-width:1000px; }
 @media (max-width:600px) {
   body.publications-page main { max-width:100%; }
   .publications-heading { margin-bottom:26px; }
-  .filter-label { font-size:17px; }
-  .theme-filter { font-size:15px; padding:9px 15px; }
+  .filter-label { font-size:16px; }
+  .theme-filter { font-size:13px; padding:8px 13px; }
 }
 
 
