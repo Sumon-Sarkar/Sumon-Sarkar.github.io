@@ -135,3 +135,6 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 .news-copy { min-width:0; font-size:14px; line-height:1.5; }
 .news-copy a { color:var(--accent); font-weight:600; text-decoration:none; }
 .news-copy a:hover { text-decoration:underline; }
+
+/* Smaller undergraduate training subsection heading */
+.undergraduate-training-heading { font-size:20px; }
