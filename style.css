@@ -159,3 +159,12 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 
 /* Match undergraduate training heading to institution name text */
 .undergraduate-training .undergraduate-training-heading { font-size:16px; font-weight:600; line-height:1.5; }
+
+/* Present all undergraduate research appointments as one grouped block */
+.undergraduate-training-block { border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.about-on-home .undergraduate-training-block .experience-entry { border-top:0; padding-top:9px; padding-bottom:9px; }
+.about-on-home .undergraduate-training-block .experience-entry:first-child { padding-top:13px; }
+.about-on-home .undergraduate-training-block .experience-entry:last-child { padding-bottom:13px; }
+.about-on-home .undergraduate-training-block .experience-entry .date { top:9px; }
+.about-on-home .undergraduate-training-block .experience-entry:first-child .date { top:13px; }
+@media (max-width:600px) { .about-on-home .undergraduate-training-block .experience-entry .date { top:auto; } }
