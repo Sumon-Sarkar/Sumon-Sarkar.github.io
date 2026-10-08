@@ -95,3 +95,25 @@ footer { border-top:1px solid var(--line); padding-top:24px; padding-bottom:36px
 .contact-form input:focus, .contact-form textarea:focus { outline:2px solid var(--accent); outline-offset:1px; }
 .contact-form button { justify-self:start; margin-top:14px; padding:10px 15px; border:1px solid var(--accent); border-radius:0; background:var(--accent); color:#fff; cursor:pointer; font:600 14px/1.2 "Helvetica Neue",Helvetica,Arial,sans-serif; }
 .contact-form button:hover { background:#102f4a; }
+
+/* Publication theme filters */
+body.publications-page main { max-width:1200px; }
+.publication-intro { margin-bottom:24px; }
+.publications-heading { margin:0 0 34px; text-align:center; font:700 54px/1.1 "Helvetica Neue",Helvetica,Arial,sans-serif; letter-spacing:-.03em; }
+.filter-label { margin:0 0 16px; color:#555; font-size:19px; }
+.theme-filters { display:flex; flex-wrap:wrap; gap:10px 14px; }
+.theme-filter { appearance:none; border:2px solid var(--accent); border-radius:999px; background:#fff; color:var(--accent); cursor:pointer; font:16px/1.2 "Helvetica Neue",Helvetica,Arial,sans-serif; padding:11px 20px; transition:background-color .15s,color .15s; }
+.theme-filter:hover,.theme-filter:focus-visible { background:#edf4fa; outline:2px solid transparent; }
+.theme-filter.is-active { background:var(--accent); color:#fff; }
+.theme-filter:focus-visible,.pub-tag:focus-visible { outline:3px solid #85b5e8; outline-offset:2px; }
+.filter-count { color:var(--muted); font-size:14px; margin:14px 0 0; }
+.pub-tag { appearance:none; border:1px solid #c8d9f3; border-radius:999px; background:#f2f6fc; color:var(--accent); cursor:pointer; font:13px/1.25 "Helvetica Neue",Helvetica,Arial,sans-serif; padding:5px 10px; }
+.pub-tag:hover { background:#e2edfb; }
+.pub-entry[hidden] { display:none; }
+@media (max-width:600px) {
+  body.publications-page main { max-width:100%; }
+  .publications-heading { font-size:42px; margin-bottom:26px; }
+  .filter-label { font-size:17px; }
+  .theme-filter { font-size:15px; padding:9px 15px; }
+}
+
