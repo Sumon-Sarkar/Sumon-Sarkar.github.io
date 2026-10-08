@@ -129,9 +129,9 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 
 /* Publisher icons and layout for homepage news coverage */
 .news-list { list-style:none; padding:0; margin:22px 0 0; }
-.news-list li { display:flex; align-items:flex-start; gap:16px; padding:15px 0; border-bottom:1px solid var(--line); }
+.news-list li { display:flex; align-items:flex-start; gap:12px; padding:11px 0; border-bottom:1px solid var(--line); }
 .news-list li:first-child { border-top:1px solid var(--line); }
-.news-logo { width:38px; height:38px; object-fit:contain; flex:0 0 38px; border-radius:5px; }
-.news-copy { min-width:0; line-height:1.55; }
+.news-logo { width:30px; height:30px; object-fit:contain; flex:0 0 30px; border-radius:4px; }
+.news-copy { min-width:0; font-size:14px; line-height:1.5; }
 .news-copy a { color:var(--accent); font-weight:600; text-decoration:none; }
 .news-copy a:hover { text-decoration:underline; }
