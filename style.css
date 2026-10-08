@@ -190,3 +190,7 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 
 /* Keep the homepage research tagline left-aligned */
 .homepage-intro-label { text-align:left; }
+
+/* Left-align homepage name and academic affiliation */
+.homepage-intro-name, .homepage-intro-affiliation { text-align:left; }
+.homepage-intro-affiliation { margin-left:0; margin-right:0; }
