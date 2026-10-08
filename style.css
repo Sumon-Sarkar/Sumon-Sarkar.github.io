@@ -23,7 +23,7 @@ p { margin:0 0 18px; }
 .label { color:var(--accent); font-size:11px; font-weight:600; letter-spacing:.11em; text-transform:uppercase; margin-bottom:15px; }
 .links { display:flex; flex-wrap:wrap; gap:15px; margin-top:26px; font-size:14px; }
 .portrait { float:right; width:190px; height:235px; margin:0 0 20px 30px; object-fit:cover; object-position:center; border:1px solid var(--line); }
-.subhead { margin:40px 0 14px; font:28px/1.1 "Instrument Serif",Georgia,serif; }
+.subhead { margin:40px 0 14px; font:600 24px/1.2 "Helvetica Neue",Helvetica,Arial,sans-serif; }
 .experience-entry { position:relative; padding:19px 150px 19px 0; border-top:1px solid var(--line); }
 .experience-entry .date { position:absolute; top:19px; right:0; color:var(--muted); font-size:13px; white-space:nowrap; }
 .experience-entry p { margin:10px 0 0; color:var(--muted); font-size:14px; }
