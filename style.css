@@ -177,3 +177,9 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 .about-on-home .education-block .experience-entry .date { top:9px; }
 .about-on-home .education-block .experience-entry:first-child .date { top:13px; }
 @media (max-width:600px) { .about-on-home .education-block .experience-entry .date { top:auto; } }
+
+/* Compact awards and honors listing on the homepage */
+.about-on-home .awards-list .award { padding-top:9px; padding-bottom:9px; line-height:1.4; }
+.about-on-home .awards-list .award .date { top:9px; }
+.about-on-home .awards-list .award span { line-height:1.4; }
+@media (max-width:600px) { .about-on-home .awards-list .award .date { top:auto; } }
