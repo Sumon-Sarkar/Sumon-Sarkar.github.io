@@ -121,3 +121,8 @@ body.publications-page main { max-width:790px; }
 .publication-keyline { display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap; margin:0 0 18px; font-size:15px; }
 .publication-keyline .social-link { color:var(--accent); text-decoration:none; }
 .publication-keyline .social-link:hover { text-decoration:underline; }
+
+/* Justify prose paragraphs consistently across all pages. */
+main p { text-align:justify; text-justify:inter-word; hyphens:auto; }
+/* Keep short interface labels and metadata naturally aligned. */
+main .filter-label, main .filter-count, main .publication-keyline { text-align:left; }
