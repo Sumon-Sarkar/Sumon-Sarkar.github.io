@@ -138,3 +138,14 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 
 /* Smaller undergraduate training subsection heading */
 .undergraduate-training-heading { font-size:20px; }
+
+/* Consistent vertical rhythm throughout the combined About section */
+.about-on-home > section { padding:0; }
+.about-on-home > section + section { margin-top:36px; }
+.about-on-home .subhead { margin:36px 0 14px; }
+.about-on-home > section:first-child .subhead:first-child,
+.about-on-home > section + section .subhead:first-child { margin-top:0; }
+.about-on-home .experience-entry { padding-top:17px; padding-bottom:17px; }
+.about-on-home .experience-entry .date { top:17px; }
+.about-on-home .award { padding-top:17px; padding-bottom:17px; }
+@media (max-width:600px) { .about-on-home .experience-entry .date { top:auto; } }
