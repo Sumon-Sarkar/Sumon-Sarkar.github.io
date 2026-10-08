@@ -128,11 +128,11 @@ main p { text-align:justify; text-justify:inter-word; hyphens:auto; }
 main .filter-label, main .filter-count, main .publication-keyline { text-align:left; }
 
 /* Publisher icons and layout for homepage news coverage */
-.news-list { list-style:none; padding:0; margin:22px 0 0; }
-.news-list li { display:flex; align-items:flex-start; gap:12px; padding:11px 0; border-bottom:1px solid var(--line); }
+.news-list { list-style:none; padding:0; margin:12px 0 0; }
+.news-list li { display:flex; align-items:center; gap:10px; padding:6px 0; border-bottom:1px solid var(--line); }
 .news-list li:first-child { border-top:1px solid var(--line); }
-.news-logo { width:30px; height:30px; object-fit:contain; flex:0 0 30px; border-radius:4px; }
-.news-copy { min-width:0; font-size:14px; line-height:1.5; }
+.news-logo { width:24px; height:24px; object-fit:contain; flex:0 0 24px; border-radius:3px; }
+.news-copy { min-width:0; font-size:13px; line-height:1.4; }
 .news-copy a { color:var(--accent); font-weight:600; text-decoration:none; }
 .news-copy a:hover { text-decoration:underline; }
 
