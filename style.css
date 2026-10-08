@@ -183,3 +183,7 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 .about-on-home .awards-list .award .date { top:9px; }
 .about-on-home .awards-list .award span { line-height:1.4; }
 @media (max-width:600px) { .about-on-home .awards-list .award .date { top:auto; } }
+
+/* Center homepage introductory heading and affiliation */
+.homepage-intro-label, .homepage-intro-name, .homepage-intro-affiliation { text-align:center; }
+.homepage-intro-affiliation { margin-left:auto; margin-right:auto; }
