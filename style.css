@@ -99,7 +99,7 @@ footer { border-top:1px solid var(--line); padding-top:24px; padding-bottom:36px
 /* Publication theme filters */
 body.publications-page main { max-width:1200px; }
 .publication-intro { margin-bottom:24px; }
-.publications-heading { margin:0 0 34px; text-align:center; font:700 54px/1.1 "Helvetica Neue",Helvetica,Arial,sans-serif; letter-spacing:-.03em; }
+.publications-heading { margin:0 0 34px; text-align:center; font:700 68px/1.1 "Helvetica Neue",Helvetica,Arial,sans-serif; letter-spacing:-.03em; }
 .filter-label { margin:0 0 16px; color:#555; font-size:19px; }
 .theme-filters { display:flex; flex-wrap:wrap; gap:10px 14px; }
 .theme-filter { appearance:none; border:2px solid var(--accent); border-radius:999px; background:#fff; color:var(--accent); cursor:pointer; font:16px/1.2 "Helvetica Neue",Helvetica,Arial,sans-serif; padding:11px 20px; transition:background-color .15s,color .15s; }
@@ -112,8 +112,13 @@ body.publications-page main { max-width:1200px; }
 .pub-entry[hidden] { display:none; }
 @media (max-width:600px) {
   body.publications-page main { max-width:100%; }
-  .publications-heading { font-size:42px; margin-bottom:26px; }
+  .publications-heading { font-size:48px; margin-bottom:26px; }
   .filter-label { font-size:17px; }
   .theme-filter { font-size:15px; padding:9px 15px; }
 }
 
+
+.publication-keyline { display:flex; align-items:center; gap:18px; flex-wrap:wrap; margin:0 0 18px; font-size:15px; }
+.publication-keyline .social-link { color:var(--accent); text-decoration:none; }
+.publication-keyline .social-link:hover { text-decoration:underline; }
+@media (max-width:600px) { .publication-keyline { gap:8px 14px; } }
