@@ -149,3 +149,10 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 .about-on-home .experience-entry .date { top:17px; }
 .about-on-home .award { padding-top:17px; padding-bottom:17px; }
 @media (max-width:600px) { .about-on-home .experience-entry .date { top:auto; } }
+
+/* Compact undergraduate research training entries */
+.undergraduate-training .subhead { margin-bottom:10px; }
+.about-on-home .undergraduate-training .experience-entry { padding-top:11px; padding-bottom:11px; line-height:1.5; }
+.about-on-home .undergraduate-training .experience-entry .date { top:11px; }
+.about-on-home .undergraduate-training .experience-entry p { margin-top:5px; }
+@media (max-width:600px) { .about-on-home .undergraduate-training .experience-entry .date { top:auto; } }
