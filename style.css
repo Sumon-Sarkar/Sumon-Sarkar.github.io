@@ -194,3 +194,6 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 /* Left-align homepage name and academic affiliation */
 .homepage-intro-name, .homepage-intro-affiliation { text-align:left; }
 .homepage-intro-affiliation { margin-left:0; margin-right:0; }
+
+/* Reduce whitespace around the TOC for publication #2 */
+.publications-page .pub-entry:nth-child(9) .pub-static::after { height:150px; margin-top:0; }
