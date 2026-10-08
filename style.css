@@ -156,3 +156,6 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 .about-on-home .undergraduate-training .experience-entry .date { top:11px; }
 .about-on-home .undergraduate-training .experience-entry p { margin-top:5px; }
 @media (max-width:600px) { .about-on-home .undergraduate-training .experience-entry .date { top:auto; } }
+
+/* Match undergraduate training heading to institution name text */
+.undergraduate-training .undergraduate-training-heading { font-size:16px; font-weight:600; line-height:1.5; }
