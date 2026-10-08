@@ -126,3 +126,12 @@ body.publications-page main { max-width:1000px; }
 main p { text-align:justify; text-justify:inter-word; hyphens:auto; }
 /* Keep short interface labels and metadata naturally aligned. */
 main .filter-label, main .filter-count, main .publication-keyline { text-align:left; }
+
+/* Publisher icons and layout for homepage news coverage */
+.news-list { list-style:none; padding:0; margin:22px 0 0; }
+.news-list li { display:flex; align-items:flex-start; gap:16px; padding:15px 0; border-bottom:1px solid var(--line); }
+.news-list li:first-child { border-top:1px solid var(--line); }
+.news-logo { width:38px; height:38px; object-fit:contain; flex:0 0 38px; border-radius:5px; }
+.news-copy { min-width:0; line-height:1.55; }
+.news-copy a { color:var(--accent); font-weight:600; text-decoration:none; }
+.news-copy a:hover { text-decoration:underline; }
