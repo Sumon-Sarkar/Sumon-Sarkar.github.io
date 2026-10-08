@@ -118,7 +118,6 @@ body.publications-page main { max-width:1200px; }
 }
 
 
-.publication-keyline { display:flex; align-items:center; gap:18px; flex-wrap:wrap; margin:0 0 18px; font-size:15px; }
+.publication-keyline { display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap; margin:0 0 18px; font-size:15px; }
 .publication-keyline .social-link { color:var(--accent); text-decoration:none; }
 .publication-keyline .social-link:hover { text-decoration:underline; }
-@media (max-width:600px) { .publication-keyline { gap:8px 14px; } }
