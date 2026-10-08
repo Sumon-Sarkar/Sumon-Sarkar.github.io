@@ -187,3 +187,6 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 /* Center homepage introductory heading and affiliation */
 .homepage-intro-label, .homepage-intro-name, .homepage-intro-affiliation { text-align:center; }
 .homepage-intro-affiliation { margin-left:auto; margin-right:auto; }
+
+/* Keep the homepage research tagline left-aligned */
+.homepage-intro-label { text-align:left; }
