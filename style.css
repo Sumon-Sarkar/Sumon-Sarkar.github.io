@@ -436,3 +436,7 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
   .publications-page .pub-title { font-size:18px; }
   .publications-page .pub-authors { font-size:15px; }
 }
+
+
+/* Match publication citation text to the blue in the user's reference image. */
+.publications-page .pub-header-citation { color:#223d5e; }
