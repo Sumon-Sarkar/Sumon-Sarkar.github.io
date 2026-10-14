@@ -440,3 +440,18 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 
 /* Match publication citation text to the blue in the user's reference image. */
 .publications-page .pub-header-citation { color:#223d5e; }
+
+
+/* Enlarge institution marks in the homepage Research Experience section. */
+.about-on-home .institution-logo {
+  width:24px;
+  height:24px;
+  flex:0 0 24px;
+}
+.about-on-home .institution-with-logo-block {
+  min-height:24px;
+  padding-left:32px;
+}
+@media (max-width:600px) {
+  .about-on-home .institution-with-logo-block { min-height:24px; padding-left:32px; }
+}
