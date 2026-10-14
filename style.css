@@ -444,14 +444,14 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 
 /* Enlarge institution marks in the homepage Research Experience section. */
 .about-on-home .institution-logo {
-  width:24px;
-  height:24px;
-  flex:0 0 24px;
+  width:38.4px;
+  height:38.4px;
+  flex:0 0 38.4px;
 }
 .about-on-home .institution-with-logo-block {
-  min-height:24px;
-  padding-left:32px;
+  min-height:38.4px;
+  padding-left:46.4px;
 }
 @media (max-width:600px) {
-  .about-on-home .institution-with-logo-block { min-height:24px; padding-left:32px; }
+  .about-on-home .institution-with-logo-block { min-height:38.4px; padding-left:46.4px; }
 }
