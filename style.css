@@ -3,7 +3,7 @@
   --muted:#60676e;
   --line:#e1e3e5;
   --accent:#173e61;
-  --page:#fff;
+  --page:#ffffed;
 }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
