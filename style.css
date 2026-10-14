@@ -333,3 +333,57 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 @media (max-width:700px) {
   .publication-keyline-meta { gap:1rem; }
 }
+
+
+/* Publication citation headers with matching journal logos. */
+.publications-page .pub-entry { overflow:hidden; }
+.publications-page .pub-header {
+  display:grid;
+  grid-template-columns:32px minmax(0,1fr) 150px;
+  align-items:center;
+  gap:12px;
+  min-height:62px;
+  margin:-18px -18px 18px;
+  padding:11px 18px;
+  border-bottom:1px solid var(--line);
+  border-radius:3px 3px 0 0;
+  background:#e9ecef;
+}
+.publications-page .pub-header-number {
+  color:var(--accent);
+  font-size:15px;
+  font-weight:700;
+  line-height:1.3;
+}
+.publications-page .pub-header-citation {
+  min-width:0;
+  color:#4d555c;
+  font-size:14px;
+  line-height:1.4;
+}
+.publications-page .pub-header-logo {
+  justify-self:end;
+  display:block;
+  width:auto;
+  max-width:145px;
+  height:36px;
+  object-fit:contain;
+}
+.publications-page .pub-static {
+  grid-template-columns:minmax(0,1fr);
+}
+.publications-page .pub-static::after { grid-column:1; }
+@media (max-width:600px) {
+  .publications-page .pub-header {
+    grid-template-columns:23px minmax(0,1fr) 86px;
+    gap:8px;
+    min-height:54px;
+    margin:-14px -14px 14px;
+    padding:9px 12px;
+  }
+  .publications-page .pub-header-number { font-size:14px; }
+  .publications-page .pub-header-citation { font-size:12px; }
+  .publications-page .pub-header-logo { max-width:82px; height:29px; }
+  .publications-page .pub-static { grid-template-columns:minmax(0,1fr); }
+  .publications-page .pub-static::after { grid-column:1; }
+}
