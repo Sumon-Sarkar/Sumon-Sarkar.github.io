@@ -3,7 +3,7 @@
   --muted:#60676e;
   --line:#e1e3e5;
   --accent:#173e61;
-  --page:#fff;
+  --page:#ffffed;
 }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
@@ -57,6 +57,9 @@ p { margin:0 0 18px; }
 .pub-actions a { border:1px solid #8d9dad; border-radius:4px; color:#8d9dad; font-size:14px; line-height:1; padding:7px 10px; text-decoration:none; }
 .pub-actions a:hover { background:#8d9dad; color:#fff; }
 .pub-tags { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+.pub-meta-row { display:flex; flex-wrap:wrap; align-items:center; gap:8px 12px; margin-top:10px; }
+.pub-meta-row .pub-actions, .pub-meta-row .pub-tags { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:0; }
+.pub-meta-row .pub-tag { white-space:nowrap; }
 .pub-tags span { border:1px solid #c8d9f3; border-radius:999px; background:#f2f6fc; color:var(--accent); font-size:13px; line-height:1.25; padding:5px 10px; }
 .pub-highlights { color:var(--muted); font-size:13px; margin:12px 0 0; padding-left:18px; }
 .pub-highlights li + li { margin-top:2px; }
@@ -81,6 +84,7 @@ footer { border-top:1px solid var(--line); padding-top:24px; padding-bottom:36px
   .pub-static { grid-template-columns:25px 1fr; }
   .pub-static::after { grid-column:2; width:100%; height:175px; margin-top:6px; }
   .pub-title { font-size:20px; }
+  .pub-meta-row { align-items:flex-start; }
 }
 .institution-dates { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:4px 24px; margin-bottom:10px; margin-right:-150px; }
 .institution-dates span { color:var(--muted); font-size:13px; white-space:nowrap; }
@@ -218,3 +222,47 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 .about-on-home details.collapsible-section[open] > summary.subhead { margin-bottom:14px; }
 .about-on-home details.collapsible-section[open] > summary.subhead::after { content:"−"; }
 .about-on-home details.collapsible-section > summary.subhead:focus-visible { outline:2px solid var(--accent); outline-offset:4px; }
+
+
+/* Bordered disclosure cards make the homepage sections visibly expandable. */
+.about-on-home details.collapsible-section {
+  margin:0 0 12px;
+  padding:0 14px;
+  border:1px solid #cbd1d6;
+  border-radius:4px;
+  background:#fff;
+  transition:border-color .15s ease, box-shadow .15s ease;
+}
+.about-on-home details.collapsible-section:hover,
+.about-on-home details.collapsible-section[open] {
+  border-color:#9aa8b4;
+}
+.about-on-home details.collapsible-section > summary.subhead {
+  min-height:54px;
+  margin:0;
+  padding:14px 0;
+  font-size:19px;
+  line-height:1.35;
+}
+.about-on-home details.collapsible-section[open] > summary.subhead {
+  margin-bottom:12px;
+  border-bottom:1px solid var(--line);
+}
+.about-on-home details.collapsible-section > summary.subhead::after {
+  display:grid;
+  width:24px;
+  height:24px;
+  flex:0 0 24px;
+  place-items:center;
+  border:1px solid #b8c1c9;
+  border-radius:50%;
+  color:var(--accent);
+  font-size:17px;
+}
+.about-on-home details.collapsible-section[open] > .collapsible-content {
+  padding-bottom:8px;
+}
+@media (max-width:600px) {
+  .about-on-home details.collapsible-section { padding-right:12px; padding-left:12px; }
+  .about-on-home details.collapsible-section > summary.subhead { min-height:50px; font-size:18px; }
+}
