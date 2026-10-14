@@ -309,3 +309,8 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 .publications-page .pub-entry:nth-child(3) .pub-static::after {
   margin-top:2px;
 }
+
+
+/* Space the homepage social links and size the email icon. */
+.homepage-social-links { gap:28px; }
+.homepage-social-links .email-icon { width:18px; height:18px; flex:0 0 18px; color:var(--accent); }
