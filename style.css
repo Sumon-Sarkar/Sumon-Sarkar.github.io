@@ -205,3 +205,7 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 .institution-with-logo-block > .institution-logo { position:absolute; left:0; top:0; }
 .institution-dates .institution-with-logo { min-height:42px; }
 @media (max-width:600px) { .institution-with-logo-block { padding-left:21px; min-height:9px; } }
+
+
+/* Emphasize advisor names in research experience. */
+.about-on-home .advisor-name { color:var(--ink); font-size:15px; font-style:normal; font-weight:600; }
