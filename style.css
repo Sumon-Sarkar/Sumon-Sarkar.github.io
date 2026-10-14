@@ -287,7 +287,7 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 
 
 /* Smaller publication titles in a tungsten gray. */
-.publications-page .pub-title { font-size:16.8px; color:#4a4f54; }
+.publications-page .pub-title { font-size:16.8px; color:#43464b; }
 @media (max-width:600px) {
   .publications-page .pub-title { font-size:16px; }
 }
