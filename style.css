@@ -322,7 +322,7 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 
 /* Keep the publication count left and align the key and Scholar link right. */
 .publication-keyline { justify-content:space-between; gap:12px 24px; }
-.publication-keyline-meta { display:flex; width:min(65%, 620px); align-items:center; justify-content:space-between; flex-wrap:wrap; gap:2rem; margin-left:auto; }
+.publication-keyline-meta { display:flex; width:min(65%, 620px); align-items:center; justify-content:space-between; flex-wrap:wrap; gap:3rem; margin-left:auto; }
 @media (max-width:700px) {
-  .publication-keyline-meta { width:auto; justify-content:flex-end; gap:1.25rem; }
+  .publication-keyline-meta { width:auto; justify-content:flex-end; gap:1.875rem; }
 }
