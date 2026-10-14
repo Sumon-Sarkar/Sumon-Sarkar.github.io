@@ -199,9 +199,22 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 .publications-page .pub-entry:nth-child(9) .pub-static::after { height:150px; margin-top:0; }
 
 /* Institutional logo alignment: add to the end of style.css */
-.institution-logo { width:42px; height:42px; object-fit:contain; flex:none; vertical-align:middle; }
+.institution-logo { width:7.5px; height:7.5px; object-fit:contain; flex:none; vertical-align:middle; }
 .institution-with-logo { display:inline-flex; align-items:center; gap:12px; }
-.institution-with-logo-block { position:relative; padding-left:54px; min-height:42px; }
+.institution-with-logo-block { position:relative; padding-left:21px; min-height:9px; }
 .institution-with-logo-block > .institution-logo { position:absolute; left:0; top:0; }
 .institution-dates .institution-with-logo { min-height:42px; }
-@media (max-width:600px) { .institution-logo { width:34px; height:34px; } .institution-with-logo-block { padding-left:46px; min-height:34px; } }
+@media (max-width:600px) { .institution-with-logo-block { padding-left:21px; min-height:9px; } }
+
+
+/* Emphasize advisor names in research experience. */
+.about-on-home .advisor-name { color:var(--ink); font-size:15px; font-style:normal; font-weight:600; }
+
+
+/* Collapsible homepage sections */
+.about-on-home details.collapsible-section > summary.subhead { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:0; cursor:pointer; list-style:none; user-select:none; }
+.about-on-home details.collapsible-section > summary.subhead::-webkit-details-marker { display:none; }
+.about-on-home details.collapsible-section > summary.subhead::after { content:"+"; color:var(--muted); font:400 22px/1 Arial,sans-serif; }
+.about-on-home details.collapsible-section[open] > summary.subhead { margin-bottom:14px; }
+.about-on-home details.collapsible-section[open] > summary.subhead::after { content:"−"; }
+.about-on-home details.collapsible-section > summary.subhead:focus-visible { outline:2px solid var(--accent); outline-offset:4px; }
