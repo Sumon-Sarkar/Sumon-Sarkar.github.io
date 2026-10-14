@@ -328,8 +328,8 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 }
 
 
-/* Set 1.5-unit spacing between publication key items. */
-.publication-keyline-meta { gap:1.5rem; }
+/* Set 1-unit spacing between publication key items. */
+.publication-keyline-meta { gap:1rem; }
 @media (max-width:700px) {
-  .publication-keyline-meta { gap:1.5rem; }
+  .publication-keyline-meta { gap:1rem; }
 }
