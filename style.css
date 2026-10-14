@@ -199,7 +199,7 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 .publications-page .pub-entry:nth-child(9) .pub-static::after { height:150px; margin-top:0; }
 
 /* Institutional logo alignment: add to the end of style.css */
-.institution-logo { width:9px; height:9px; object-fit:contain; flex:none; vertical-align:middle; }
+.institution-logo { width:7.5px; height:7.5px; object-fit:contain; flex:none; vertical-align:middle; }
 .institution-with-logo { display:inline-flex; align-items:center; gap:12px; }
 .institution-with-logo-block { position:relative; padding-left:21px; min-height:9px; }
 .institution-with-logo-block > .institution-logo { position:absolute; left:0; top:0; }
