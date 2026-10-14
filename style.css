@@ -387,3 +387,52 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
   .publications-page .pub-static { grid-template-columns:minmax(0,1fr); }
   .publications-page .pub-static::after { grid-column:1; }
 }
+
+
+/* Match the reference publication layout: roomy white cards and prominent journal bands. */
+.publications-page .pub-entry {
+  padding:28px;
+  border:1px solid #aeb7bf;
+  border-radius:0;
+  background:#fff;
+}
+.publications-page .pub-header {
+  grid-template-columns:38px minmax(0,1fr) 180px;
+  gap:18px;
+  min-height:78px;
+  margin:-28px -28px 20px;
+  padding:14px 24px;
+  border-color:#aeb7bf;
+  border-radius:0;
+  background:#f1f2f3;
+}
+.publications-page .pub-header-number { font-size:19px; }
+.publications-page .pub-header-citation {
+  color:var(--accent);
+  font-size:19px;
+  line-height:1.4;
+}
+.publications-page .pub-header-logo {
+  max-width:180px;
+  height:54px;
+}
+.publications-page .pub-title { font-size:20px; }
+.publications-page .pub-authors { font-size:17px; line-height:1.6; }
+.publications-page .pub-actions a { font-size:15px; }
+.publications-page .pub-meta-row .pub-tag { font-size:14px; padding:6px 12px; }
+.publications-page .pub-highlights { font-size:14px; line-height:1.55; }
+@media (max-width:600px) {
+  .publications-page .pub-entry { padding:14px; }
+  .publications-page .pub-header {
+    grid-template-columns:23px minmax(0,1fr) 82px;
+    gap:7px;
+    min-height:54px;
+    margin:-14px -14px 14px;
+    padding:9px 10px;
+  }
+  .publications-page .pub-header-number { font-size:14px; }
+  .publications-page .pub-header-citation { font-size:13px; }
+  .publications-page .pub-header-logo { max-width:78px; height:29px; }
+  .publications-page .pub-title { font-size:18px; }
+  .publications-page .pub-authors { font-size:15px; }
+}
