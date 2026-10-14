@@ -314,3 +314,7 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 /* Space the homepage social links and size the email icon. */
 .homepage-social-links { gap:28px; }
 .homepage-social-links .email-icon { width:18px; height:18px; flex:0 0 18px; color:var(--accent); }
+
+
+/* Keep the publication count alongside the authorship key. */
+.publication-keyline .filter-count { margin:0; }
