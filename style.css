@@ -326,3 +326,10 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 @media (max-width:700px) {
   .publication-keyline-meta { width:auto; justify-content:flex-end; gap:1.875rem; }
 }
+
+
+/* Set consistent 4-unit spacing between publication key items. */
+.publication-keyline-meta { gap:4rem; }
+@media (max-width:700px) {
+  .publication-keyline-meta { gap:4rem; }
+}
