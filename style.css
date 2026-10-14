@@ -292,3 +292,14 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 @media (max-width:600px) {
   .publications-page .pub-title { font-size:16px; }
 }
+
+
+/* Scale publication #5's TOC down by 20%. */
+.publications-page .pub-entry:nth-child(6) .pub-static::after {
+  width:min(100%, 504px);
+  height:252px;
+}
+/* Reduce the spacing between publication #8's highlights and TOC by half. */
+.publications-page .pub-entry:nth-child(3) .pub-static::after {
+  margin-top:2px;
+}
