@@ -570,5 +570,5 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 }
 @media (max-width:600px) {
   .publications-page .pub-header { grid-template-columns:minmax(0,1fr) 29px; }
-  .publications-page .pub-volume-cover { width:24.75px; height:35.36px; }
+  .publications-page .pub-volume-cover { width:23.1px; height:33px; }
 }
