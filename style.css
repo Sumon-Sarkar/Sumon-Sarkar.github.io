@@ -544,31 +544,15 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 }
 
 
-/* Reduce publication volume covers by 40%. */
+/* Reduce volume covers by 50% from the previously published dimensions. */
 .publications-page .pub-header {
-  grid-template-columns:minmax(0,1fr) 100px;
-  min-height:178px;
+  grid-template-columns:minmax(0,1fr) 28px;
 }
 .publications-page .pub-volume-cover {
-  width:92.4px;
-  height:132px;
+  width:23.1px;
+  height:33px;
 }
 @media (max-width:600px) {
-  .publications-page .pub-header { grid-template-columns:minmax(0,1fr) 48px; }
-  .publications-page .pub-volume-cover { width:45.6px; height:67.2px; }
-}
-
-
-/* Set volume covers to 46.2 × 66 px; scale mobile covers proportionally. */
-.publications-page .pub-header {
-  grid-template-columns:minmax(0,1fr) 54px;
-  min-height:112px;
-}
-.publications-page .pub-volume-cover {
-  width:46.2px;
-  height:66px;
-}
-@media (max-width:600px) {
-  .publications-page .pub-header { grid-template-columns:minmax(0,1fr) 29px; }
-  .publications-page .pub-volume-cover { width:23.1px; height:33px; }
+  .publications-page .pub-header { grid-template-columns:minmax(0,1fr) 16px; }
+  .publications-page .pub-volume-cover { width:11.55px; height:16.5px; }
 }
