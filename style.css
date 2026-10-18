@@ -34,21 +34,21 @@ p { margin:0 0 18px; }
 .pub-list { display:grid; gap:20px; margin-top:28px; }
 .pub-entry { border-left:3px solid var(--line); padding-left:18px; }
 .pub-static { display:grid; grid-template-columns:32px minmax(0, 1fr); gap:12px; align-items:start; text-align:left; }
-.pub-static::after { content:""; grid-column:2; justify-self:center; width:min(100%, 420px); height:210px; margin-top:4px; background:center / contain no-repeat; }
-.pub-entry:nth-child(1) .pub-static::after { background-image:url("assets/toc-web/mosaic.jpg"); }
-.pub-entry:nth-child(2) .pub-static::after { background-image:url("assets/toc-web/beta-gamma-borylation-amines.jpg"); }
-.pub-entry:nth-child(3) .pub-static::after { background-image:url("assets/toc-web/pd-h-hydricity.jpg"); }
-.pub-entry:nth-child(4) .pub-static::after { background-image:url("assets/toc-web/alpha-borylation-amines.jpg"); }
-.pub-entry:nth-child(5) .pub-static::after { background-image:url("assets/toc-web/pd-photocatalysis-review.jpg"); }
-.pub-entry:nth-child(6) .pub-static::after { background-image:url("assets/toc-web/hat-review.jpg"); }
-.pub-entry:nth-child(7) .pub-static::after { background-image:url("assets/toc-web/visible-light-metal-catalysis-review.jpg"); }
-.pub-entry:nth-child(8) .pub-static::after { background-image:url("assets/toc-web/evolved-complexity-revised.png"); }
-.pub-entry:nth-child(9) .pub-static::after { background-image:url("assets/toc-web/aryl-radicals-triflates.jpg"); }
-.pub-entry:nth-child(10) .pub-static::after { background-image:url("assets/toc-web/radical-relay-heck.jpg"); }
-.pub-entry:nth-child(3) .pub-static::after,
-.pub-entry:nth-child(10) .pub-static::after { width:min(100%, 525px); height:263px; }
-.pub-entry:nth-child(4) .pub-static::after,
-.pub-entry:nth-child(5) .pub-static::after { width:min(100%, 630px); height:315px; }
+.pub-static::before { content:""; grid-column:2; justify-self:center; width:min(100%, 420px); height:210px; margin-top:4px; background:center / contain no-repeat; }
+.pub-entry:nth-child(1) .pub-static::before { background-image:url("assets/toc-web/mosaic.jpg"); }
+.pub-entry:nth-child(2) .pub-static::before { background-image:url("assets/toc-web/beta-gamma-borylation-amines.jpg"); }
+.pub-entry:nth-child(3) .pub-static::before { background-image:url("assets/toc-web/pd-h-hydricity.jpg"); }
+.pub-entry:nth-child(4) .pub-static::before { background-image:url("assets/toc-web/alpha-borylation-amines.jpg"); }
+.pub-entry:nth-child(5) .pub-static::before { background-image:url("assets/toc-web/pd-photocatalysis-review.jpg"); }
+.pub-entry:nth-child(6) .pub-static::before { background-image:url("assets/toc-web/hat-review.jpg"); }
+.pub-entry:nth-child(7) .pub-static::before { background-image:url("assets/toc-web/visible-light-metal-catalysis-review.jpg"); }
+.pub-entry:nth-child(8) .pub-static::before { background-image:url("assets/toc-web/evolved-complexity-revised.png"); }
+.pub-entry:nth-child(9) .pub-static::before { background-image:url("assets/toc-web/aryl-radicals-triflates.jpg"); }
+.pub-entry:nth-child(10) .pub-static::before { background-image:url("assets/toc-web/radical-relay-heck.jpg"); }
+.pub-entry:nth-child(3) .pub-static::before,
+.pub-entry:nth-child(10) .pub-static::before { width:min(100%, 525px); height:263px; }
+.pub-entry:nth-child(4) .pub-static::before,
+.pub-entry:nth-child(5) .pub-static::before { width:min(100%, 630px); height:315px; }
 .pub-number { color:var(--accent); font:600 14px/1.3 "Helvetica Neue",Helvetica,Arial,sans-serif; padding-top:4px; }
 .pub-authors { display:block; color:var(--muted); font-size:16px; line-height:1.55; margin-top:7px; }
 .pub-title { display:block; font:600 21px/1.25 "Helvetica Neue",Helvetica,Arial,sans-serif; letter-spacing:-.01em; }
@@ -82,7 +82,7 @@ footer { border-top:1px solid var(--line); padding-top:24px; padding-bottom:36px
   .experience-entry { padding-right:0; }
   .experience-entry .date { position:static; margin-top:5px; }
   .pub-static { grid-template-columns:25px 1fr; }
-  .pub-static::after { grid-column:2; width:100%; height:175px; margin-top:6px; }
+  .pub-static::before { grid-column:2; width:100%; height:175px; margin-top:6px; }
   .pub-title { font-size:20px; }
   .pub-meta-row { align-items:flex-start; }
 }
@@ -200,7 +200,7 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 .homepage-intro-affiliation { margin-left:0; margin-right:0; }
 
 /* Reduce whitespace around the TOC for publication #2 */
-.publications-page .pub-entry:nth-child(9) .pub-static::after { height:150px; margin-top:0; }
+.publications-page .pub-entry:nth-child(9) .pub-static::before { height:150px; margin-top:0; }
 
 /* Institutional logo alignment: add to the end of style.css */
 .institution-logo { width:7.5px; height:7.5px; object-fit:contain; flex:none; vertical-align:middle; }
@@ -295,18 +295,18 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 
 
 /* Scale publication #5's TOC down by 20%. */
-.publications-page .pub-entry:nth-child(6) .pub-static::after {
+.publications-page .pub-entry:nth-child(6) .pub-static::before {
   width:min(80%, 336px);
   height:168px;
 }
 @media (max-width:600px) {
-  .publications-page .pub-entry:nth-child(6) .pub-static::after {
+  .publications-page .pub-entry:nth-child(6) .pub-static::before {
     width:80%;
     height:140px;
   }
 }
 /* Reduce the spacing between publication #8's highlights and TOC by half. */
-.publications-page .pub-entry:nth-child(3) .pub-static::after {
+.publications-page .pub-entry:nth-child(3) .pub-static::before {
   margin-top:2px;
 }
 
@@ -372,7 +372,7 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 .publications-page .pub-static {
   grid-template-columns:minmax(0,1fr);
 }
-.publications-page .pub-static::after { grid-column:1; }
+.publications-page .pub-static::before { grid-column:1; }
 @media (max-width:600px) {
   .publications-page .pub-header {
     grid-template-columns:23px minmax(0,1fr) 86px;
@@ -385,7 +385,7 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
   .publications-page .pub-header-citation { font-size:12px; }
   .publications-page .pub-header-logo { max-width:82px; height:29px; }
   .publications-page .pub-static { grid-template-columns:minmax(0,1fr); }
-  .publications-page .pub-static::after { grid-column:1; }
+  .publications-page .pub-static::before { grid-column:1; }
 }
 
 
@@ -454,4 +454,91 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
 }
 @media (max-width:600px) {
   .about-on-home .institution-with-logo-block { min-height:38.4px; padding-left:46.4px; }
+}
+
+
+/* Publication header with title, authors, citation, and volume cover. */
+.publications-page .pub-entry {
+  padding:0;
+  overflow:hidden;
+  border:1px solid #9daabc;
+  border-radius:0;
+  background:#fff;
+}
+.publications-page .pub-header {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 162px;
+  align-items:center;
+  gap:24px;
+  min-height:266px;
+  margin:0;
+  padding:22px 28px;
+  border:0;
+  border-bottom:1px solid #aab5c4;
+  border-radius:0;
+  background:#f7f8fb;
+}
+.publications-page .pub-header-copy { min-width:0; }
+.publications-page .pub-header-titleline {
+  display:flex;
+  align-items:baseline;
+  gap:14px;
+  margin-bottom:16px;
+}
+.publications-page .pub-header-number {
+  flex:0 0 auto;
+  padding:0;
+  color:#203f62;
+  font-size:20px;
+  font-weight:700;
+}
+.publications-page .pub-header .pub-title {
+  display:block;
+  color:#25292e;
+  font-size:21px;
+  font-weight:700;
+  line-height:1.3;
+  letter-spacing:0;
+}
+.publications-page .pub-header .pub-authors {
+  margin-top:0;
+  color:#25292e;
+  font-size:17px;
+  line-height:1.55;
+}
+.publications-page .pub-header-citation {
+  display:block;
+  margin-top:14px;
+  color:#223d5e;
+  font-size:19px;
+  line-height:1.4;
+}
+.publications-page .pub-volume-cover {
+  display:block;
+  justify-self:end;
+  align-self:center;
+  width:154px;
+  height:220px;
+  object-fit:contain;
+}
+.publications-page .pub-static {
+  grid-template-columns:minmax(0,1fr);
+  gap:12px;
+  padding:18px 28px 24px;
+}
+.publications-page .pub-static::before { grid-column:1; }
+@media (max-width:600px) {
+  .publications-page .pub-header {
+    grid-template-columns:minmax(0,1fr) 78px;
+    min-height:0;
+    gap:10px;
+    padding:14px;
+  }
+  .publications-page .pub-header-titleline { gap:8px; margin-bottom:10px; }
+  .publications-page .pub-header-number { font-size:15px; }
+  .publications-page .pub-header .pub-title { font-size:16px; line-height:1.25; }
+  .publications-page .pub-header .pub-authors { font-size:13px; line-height:1.45; }
+  .publications-page .pub-header-citation { margin-top:10px; font-size:15px; }
+  .publications-page .pub-volume-cover { width:76px; height:112px; }
+  .publications-page .pub-static { padding:14px; }
 }
