@@ -542,3 +542,18 @@ main .filter-label, main .filter-count, main .publication-keyline { text-align:l
   .publications-page .pub-volume-cover { width:76px; height:112px; }
   .publications-page .pub-static { padding:14px; }
 }
+
+
+/* Reduce publication volume covers by 40%. */
+.publications-page .pub-header {
+  grid-template-columns:minmax(0,1fr) 100px;
+  min-height:178px;
+}
+.publications-page .pub-volume-cover {
+  width:92.4px;
+  height:132px;
+}
+@media (max-width:600px) {
+  .publications-page .pub-header { grid-template-columns:minmax(0,1fr) 48px; }
+  .publications-page .pub-volume-cover { width:45.6px; height:67.2px; }
+}
